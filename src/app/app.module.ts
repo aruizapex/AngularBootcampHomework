@@ -3,10 +3,12 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DirectivasDeAtributoComponent } from './components/directivas-de-atributo/directivas-de-atributo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DirectivasDeAtributoComponent
   ],
   imports: [
     BrowserModule,
