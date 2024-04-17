@@ -1,0 +1,35 @@
+<div class="container">
+  <p>Renderizar un arreglo de strings [“A”, “B”, “C”] usando ngFor</p>
+  <ul>
+    <li *ngFor="let item of array">{{ item }}</li>
+  </ul>
+
+  <br />
+  <p>
+    Mostrar del arreglo anterior solo los ítems que no equivalgan a “B” usando
+    ngIf
+  </p>
+  <ul>
+    <ng-container *ngFor="let item of array">
+      <li *ngIf="item !== 'B'">
+        {{ item }}
+      </li>
+    </ng-container>
+  </ul>
+
+  <br />
+  <p>
+    Para la misma lista anterior, en otro apartado, usar ngSwitch de tal forma
+    que si el item es “A” mostrar el número 1, “B” el número 2 y “C” el número 3
+    respectivamente.
+  </p>
+  <ul>
+    <ng-container *ngFor="let item of array">
+      <ng-container [ngSwitch]="item">
+        <li *ngSwitchCase="'A'">1</li>
+        <li *ngSwitchCase="'B'">2</li>
+        <li *ngSwitchCase="'C'">3</li>
+      </ng-container>
+    </ng-container>
+  </ul>
+</div>
