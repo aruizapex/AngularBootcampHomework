@@ -7,12 +7,16 @@ import { DirectivasDeAtributoComponent } from './components/directivas-de-atribu
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DirectivasDeAtributo2Component } from './components/directivas-de-atributo-2/directivas-de-atributo-2.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { DirectivasCustomComponent } from './components/directivas-custom/directivas-custom.component';
+import { CapitalizeDirective } from './components/directivas-custom/capitalize.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectivasDeAtributoComponent,
-    DirectivasDeAtributo2Component
+    DirectivasDeAtributo2Component,
+    DirectivasCustomComponent,
+    CapitalizeDirective
   ],
   imports: [
     BrowserModule,
