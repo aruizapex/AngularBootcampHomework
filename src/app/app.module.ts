@@ -7,17 +7,22 @@ import { DirectivasDeAtributoComponent } from './components/directivas-de-atribu
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DirectivasDeAtributo2Component } from './components/directivas-de-atributo-2/directivas-de-atributo-2.component';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { ModuleProvidersInjectableModule } from '@components/module-providers-injectable/module-providers-injectable.module';
+import { InjectableRootServiceComponent } from './components/injectable-root-service/injectable-root-service.component';
+import {MatDividerModule} from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,
     DirectivasDeAtributoComponent,
-    DirectivasDeAtributo2Component
+    DirectivasDeAtributo2Component,
+    InjectableRootServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDividerModule,
+    ModuleProvidersInjectableModule
   ],
   providers: [
     provideClientHydration(),
