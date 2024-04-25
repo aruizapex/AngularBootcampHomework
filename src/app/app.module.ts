@@ -7,12 +7,16 @@ import { DirectivasDeAtributoComponent } from './components/directivas-de-atribu
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DirectivasDeAtributo2Component } from './components/directivas-de-atributo-2/directivas-de-atributo-2.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { PipesCComponent } from './components/pipes-c/pipes-c.component';
+import { CapitalizeWordPipe } from './pipes/capitalize-word.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectivasDeAtributoComponent,
-    DirectivasDeAtributo2Component
+    DirectivasDeAtributo2Component,
+    PipesCComponent,
+    CapitalizeWordPipe
   ],
   imports: [
     BrowserModule,
