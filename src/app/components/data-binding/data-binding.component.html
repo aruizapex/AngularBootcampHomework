@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="bottom-space">
+    <h3>Event Binding</h3>
+    <button (click)="handleTriggerButton()">Click me</button>
+  </div>
+
+  <mat-divider></mat-divider>
+  <div class="bottom-space">
+    <h3>One Way Data Binding</h3>
+    <input type="text" [(ngModel)]="dataBindingText" />
+  </div>
+
+  <mat-divider></mat-divider>
+  <h3>Two Way Data Binding</h3>
+  <span>{{ dataBindingText }}</span>
+</div>

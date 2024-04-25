@@ -7,17 +7,23 @@ import { DirectivasDeAtributoComponent } from './components/directivas-de-atribu
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DirectivasDeAtributo2Component } from './components/directivas-de-atributo-2/directivas-de-atributo-2.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
+import {MatDividerModule} from '@angular/material/divider';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectivasDeAtributoComponent,
-    DirectivasDeAtributo2Component
+    DirectivasDeAtributo2Component,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDividerModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
