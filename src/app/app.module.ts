@@ -7,7 +7,7 @@ import { DirectivasDeAtributoComponent } from './components/directivas-de-atribu
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DirectivasDeAtributo2Component } from './components/directivas-de-atributo-2/directivas-de-atributo-2.component';
 import {MatTabsModule} from '@angular/material/tabs';
-import {MyFirstModuleModule} from './modules/my-first-module/my-first-module.module';
+import {MyFirstModule} from './modules/my-first/my-first.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,7 @@ import {MyFirstModuleModule} from './modules/my-first-module/my-first-module.mod
     BrowserModule,
     AppRoutingModule,
     MatTabsModule,
-    MyFirstModuleModule
+    MyFirstModule
   ],
   providers: [
     provideClientHydration(),
